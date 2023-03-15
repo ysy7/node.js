@@ -29,9 +29,7 @@
 // console.log(result)   // 1
 
 
-square = num => {
-  return num*num;
-}
+square = num => num*num;
 
 result = square(3);
 console.log(result);      // 9
