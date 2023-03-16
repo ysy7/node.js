@@ -33,3 +33,4 @@ square = num => num*num;
 
 result = square(3);
 console.log(result);      // 9
+
