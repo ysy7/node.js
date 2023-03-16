@@ -1,0 +1,61 @@
+data type
+기본 자료형
+boolean
+null
+nudefined
+number
+string
+symbol
+
+사용자 정의형
+object
+Data Types
+기본 자료형(Primitive)
+- boolean
+- null
+- undefined
+- number
+- string
+- symbol //ES6
+// 중요한 거
+- null
+- NaN
+- 0
+- 빈 문자열("", '', ``)
+- undefined
+
+사용자 정의형
+- object
+
+-----------------------------------------------------
+const 
+-block 범위의 상수
+
+함수
+- 일반적인 형태
+function 문자출력함수(문자){
+    console.log('문자출력함수 ' +문자);
+}
+문자출려함수('a');
+-함수명을 변수처럼 사용(함수의 주소를 넣은 형태)
+- 익명함수 대입
+
+arrow function
+-화살표로 함수의 축약
+-항상 익명함수
+
+-일반형
+(매개변수) => (함수코드)
+
+-매개변수가 하나일 때
+매개변수 => {함수코드}
+
+-함수코드가 return문 하나일때
+매개변수 => 함수코드
+
+json---------------------------------------------------
+
+JavaScriptObjectNotation
+요즘 대세인 data
+
+
