@@ -1,21 +1,12 @@
 const http = require('http');
-const fs = require('fs');
+// const fs = require('fs');
+const url = require('url');
 
 const app = http.createServer(function(req, res) {
-  let url = req.url;
-
-  if(url === '/')
-    url = '/index.html';
-  // favicon : 신경쓰지 말것. 시험에 안 낼게
-  if(url === '/favicon.ico')
-    return res.writeHead(404);
-
-  res.writeHead(200);
-
-  // __dirname : 'D:\JWP\2023-NODE\문법' + url : /index.html
-  // fs.readFileSync() : 동기함수. 비동기로 바꾸는것을 권장
-  const htmlCode = fs.readFileSync(__dirname + url);
-  res.end(htmlCode);
+  let _url = req.url;   // 문자열 형태
+  // 문자열 형태의 _url을 object형태로 변환
+  let queryData = url.parse(_url, true).query;
+  res.end(queryData.id);
 });
 
 app.listen(3333);
