@@ -7,10 +7,12 @@ function getAllFiles(dirPath, arrOfFiles) {
   const files = fs.readdirSync(dirPath);
 
   files.forEach(function(file) {
-    if(fs.statSync(dirPath + "\\" + file).isDirectory()) {
-      console.log(dirPath + "\\" + file + "는 디렉토리(폴더)입니다");
+    const destPath = dirPath + "\\" + file;
+
+    if(fs.statSync(destPath).isDirectory()) {
+      console.log(destPath + "는 디렉토리(폴더)입니다");
     } else {
-      console.log(dirPath + "\\" + file + "는 파일입니다");
+      console.log(destPath + "는 파일입니다");
     }
   });
 }
