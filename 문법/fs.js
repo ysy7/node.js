@@ -13,5 +13,12 @@ const files = fs.readdirSync(__dirname);
 result = path.join(__dirname, files[1]);
 console.log(result);
 
+console.log(path.basename(result));   // path.basename()파일명만 추출
+
+
+const copiedFile = path.join(__dirname, '복사한파일.js')
+fs.copyFileSync(result, copiedFile);  // 파일 복사
+fs.unlinkSync(copiedFile);            // 파일 삭제
+
 // 해당 파일에 대한 정보를 알 수 있음
 console.log(fs.statSync(result));
