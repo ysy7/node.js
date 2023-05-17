@@ -1,0 +1,17 @@
+{
+  "name": "2023-node",
+  "version": "1.0.0",
+  "description": "삼미웹정",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JWP",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
+
+package.json에서
+"dependencies" 속성
